@@ -1,0 +1,17 @@
+<html>
+
+<body>
+	{{ message }}
+<div>
+
+	<form action="/twilio/" method="post">
+	{% csrf_token %}
+		<textarea name="message" cols="20" rows="8"></textarea>
+		<input type="text" name="number"/>
+		<input type="submit" value="Send"/>
+
+	</form>
+</div>
+
+</body>
+</html>
